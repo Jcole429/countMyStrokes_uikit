@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hole #:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i71-tk-BMh" userLabel="holeLabel">
-                                <rect key="frame" x="125" y="115" width="150" height="54"/>
+                                <rect key="frame" x="132" y="301" width="150" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -74,16 +74,56 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-TN-D5f">
+                                <rect key="frame" x="276" y="432" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="strokesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nez-u0-yW8"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-ld-dbq">
+                                <rect key="frame" x="276" y="472" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="chipsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="tdW-TX-e1J"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-D5-TY0">
+                                <rect key="frame" x="276" y="511" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="putsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="GQG-F7-Hre"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-YJ-OYv">
+                                <rect key="frame" x="276" y="565" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="penaltiesStepperPRessed:" destination="BYZ-38-t0r" eventType="valueChanged" id="cRT-jS-XlK"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-e6-Zoe">
+                                <rect key="frame" x="125" y="149" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="chipsLabel" destination="hel-gR-iiL" id="qtu-kN-eq5"/>
+                        <outlet property="chipsStepper" destination="DGk-ld-dbq" id="nFQ-R4-OSv"/>
                         <outlet property="holeNumLabel" destination="i71-tk-BMh" id="DKt-S0-7fg"/>
                         <outlet property="penaltiesLabel" destination="qqD-FC-7g0" id="Kce-x0-yui"/>
+                        <outlet property="penaltiesStepper" destination="ZhT-YJ-OYv" id="IZQ-WQ-u0E"/>
                         <outlet property="putsLabel" destination="b7e-jJ-rpf" id="Cja-FR-FSf"/>
+                        <outlet property="putsStepper" destination="iEl-D5-TY0" id="bkC-KG-PiO"/>
                         <outlet property="strokesLabel" destination="VYq-R7-Bwh" id="gS0-iG-14L"/>
+                        <outlet property="strokesStepper" destination="v3M-TN-D5f" id="GW3-zO-z4u"/>
+                        <outlet property="totalScoreLabel" destination="vnS-e6-Zoe" id="r3o-pf-ueB"/>
                         <outlet property="totalStrokesLabel" destination="x7C-bd-Ap5" id="nT9-gO-LpP"/>
                     </connections>
                 </viewController>

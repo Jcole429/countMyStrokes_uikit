@@ -8,6 +8,14 @@
 import Foundation
 
 struct Game {
-    let totalScore = 0
+    var totalScore: Int {
+        get {
+            var sum = 0
+            for hole in holes {
+                sum += hole.totalStrokesTaken
+            }
+            return sum
+        }
+    }
     var holes: [Hole]
 }

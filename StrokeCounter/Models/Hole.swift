@@ -8,11 +8,15 @@
 import Foundation
 
 struct Hole {
-    let holeNumber: Int
-    let par: Int?
-    let totalStrokesTaken = 0
-    let strokesTaken = 0
-    let chipsTaken = 0
-    let putsTaken = 0
-    let penaltiesTaken = 0
+    var holeNumber: Int
+    var par: Int?
+    var totalStrokesTaken: Int {
+        get {
+            return strokesTaken + chipsTaken + putsTaken + penaltiesTaken
+        }
+    }
+    var strokesTaken = 0
+    var chipsTaken = 0
+    var putsTaken = 0
+    var penaltiesTaken = 0
 }
