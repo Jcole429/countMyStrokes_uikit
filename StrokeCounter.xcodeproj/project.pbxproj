@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4AD6B822675948E00ABB0DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6B812675948E00ABB0DF /* AppDelegate.swift */; };
+		B4AD6B842675948E00ABB0DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6B832675948E00ABB0DF /* SceneDelegate.swift */; };
+		B4AD6B862675948E00ABB0DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6B852675948E00ABB0DF /* ViewController.swift */; };
+		B4AD6B892675948E00ABB0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B872675948E00ABB0DF /* Main.storyboard */; };
+		B4AD6B8B2675949B00ABB0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */; };
+		B4AD6B8E2675949B00ABB0DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B8C2675949B00ABB0DF /* LaunchScreen.storyboard */; };
+		B4AD6B932675949B00ABB0DF /* StrokeCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AD6B992675949B00ABB0DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B972675949B00ABB0DF /* Interface.storyboard */; };
+		B4AD6B9B2675949B00ABB0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */; };
+		B4AD6BA22675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AD6BA72675949C00ABB0DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */; };
+		B4AD6BA92675949C00ABB0DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BA82675949C00ABB0DF /* ExtensionDelegate.swift */; };
+		B4AD6BAB2675949C00ABB0DF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BAA2675949C00ABB0DF /* NotificationController.swift */; };
+		B4AD6BAD2675949C00ABB0DF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BAC2675949C00ABB0DF /* ComplicationController.swift */; };
+		B4AD6BAF2675949C00ABB0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6BAE2675949C00ABB0DF /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4AD6B942675949B00ABB0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AD6B762675948E00ABB0DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AD6B912675949B00ABB0DF;
+			remoteInfo = "StrokeCounter WatchKit App";
+		};
+		B4AD6BA32675949C00ABB0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4AD6B762675948E00ABB0DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AD6BA02675949C00ABB0DF;
+			remoteInfo = "StrokeCounter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4AD6BB72675949C00ABB0DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B4AD6BA22675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD6BBB2675949C00ABB0DF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B4AD6B932675949B00ABB0DF /* StrokeCounter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6B812675948E00ABB0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4AD6B832675948E00ABB0DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4AD6B852675948E00ABB0DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4AD6B882675948E00ABB0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4AD6B8D2675949B00ABB0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4AD6B8F2675949B00ABB0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StrokeCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6B982675949B00ABB0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4AD6B9C2675949B00ABB0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StrokeCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B4AD6BA82675949C00ABB0DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B4AD6BAA2675949C00ABB0DF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B4AD6BAC2675949C00ABB0DF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B4AD6BAE2675949C00ABB0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4AD6BB02675949C00ABB0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AD6BB12675949C00ABB0DF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4AD6B7B2675948E00ABB0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD6B9E2675949C00ABB0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4AD6B752675948E00ABB0DF = {
+			isa = PBXGroup;
+			children = (
+				B4AD6B802675948E00ABB0DF /* StrokeCounter */,
+				B4AD6B962675949B00ABB0DF /* StrokeCounter WatchKit App */,
+				B4AD6BA52675949C00ABB0DF /* StrokeCounter WatchKit Extension */,
+				B4AD6B7F2675948E00ABB0DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4AD6B7F2675948E00ABB0DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */,
+				B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */,
+				B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4AD6B802675948E00ABB0DF /* StrokeCounter */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD6B812675948E00ABB0DF /* AppDelegate.swift */,
+				B4AD6B832675948E00ABB0DF /* SceneDelegate.swift */,
+				B4AD6B852675948E00ABB0DF /* ViewController.swift */,
+				B4AD6B872675948E00ABB0DF /* Main.storyboard */,
+				B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */,
+				B4AD6B8C2675949B00ABB0DF /* LaunchScreen.storyboard */,
+				B4AD6B8F2675949B00ABB0DF /* Info.plist */,
+			);
+			path = StrokeCounter;
+			sourceTree = "<group>";
+		};
+		B4AD6B962675949B00ABB0DF /* StrokeCounter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD6B972675949B00ABB0DF /* Interface.storyboard */,
+				B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */,
+				B4AD6B9C2675949B00ABB0DF /* Info.plist */,
+			);
+			path = "StrokeCounter WatchKit App";
+			sourceTree = "<group>";
+		};
+		B4AD6BA52675949C00ABB0DF /* StrokeCounter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */,
+				B4AD6BA82675949C00ABB0DF /* ExtensionDelegate.swift */,
+				B4AD6BAA2675949C00ABB0DF /* NotificationController.swift */,
+				B4AD6BAC2675949C00ABB0DF /* ComplicationController.swift */,
+				B4AD6BAE2675949C00ABB0DF /* Assets.xcassets */,
+				B4AD6BB02675949C00ABB0DF /* Info.plist */,
+				B4AD6BB12675949C00ABB0DF /* PushNotificationPayload.apns */,
+			);
+			path = "StrokeCounter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4AD6B7D2675948E00ABB0DF /* StrokeCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter" */;
+			buildPhases = (
+				B4AD6B7A2675948E00ABB0DF /* Sources */,
+				B4AD6B7B2675948E00ABB0DF /* Frameworks */,
+				B4AD6B7C2675948E00ABB0DF /* Resources */,
+				B4AD6BBB2675949C00ABB0DF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4AD6B952675949B00ABB0DF /* PBXTargetDependency */,
+			);
+			name = StrokeCounter;
+			productName = StrokeCounter;
+			productReference = B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit App" */;
+			buildPhases = (
+				B4AD6B902675949B00ABB0DF /* Resources */,
+				B4AD6BB72675949C00ABB0DF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4AD6BA42675949C00ABB0DF /* PBXTargetDependency */,
+			);
+			name = "StrokeCounter WatchKit App";
+			productName = "StrokeCounter WatchKit App";
+			productReference = B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit Extension" */;
+			buildPhases = (
+				B4AD6B9D2675949C00ABB0DF /* Sources */,
+				B4AD6B9E2675949C00ABB0DF /* Frameworks */,
+				B4AD6B9F2675949C00ABB0DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StrokeCounter WatchKit Extension";
+			productName = "StrokeCounter WatchKit Extension";
+			productReference = B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4AD6B762675948E00ABB0DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B4AD6B7D2675948E00ABB0DF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B4AD6B912675949B00ABB0DF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B4AD6BA02675949C00ABB0DF = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "StrokeCounter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4AD6B752675948E00ABB0DF;
+			productRefGroup = B4AD6B7F2675948E00ABB0DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4AD6B7D2675948E00ABB0DF /* StrokeCounter */,
+				B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */,
+				B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4AD6B7C2675948E00ABB0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AD6B8E2675949B00ABB0DF /* LaunchScreen.storyboard in Resources */,
+				B4AD6B8B2675949B00ABB0DF /* Assets.xcassets in Resources */,
+				B4AD6B892675948E00ABB0DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD6B902675949B00ABB0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AD6B9B2675949B00ABB0DF /* Assets.xcassets in Resources */,
+				B4AD6B992675949B00ABB0DF /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD6B9F2675949C00ABB0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AD6BAF2675949C00ABB0DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4AD6B7A2675948E00ABB0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AD6B862675948E00ABB0DF /* ViewController.swift in Sources */,
+				B4AD6B822675948E00ABB0DF /* AppDelegate.swift in Sources */,
+				B4AD6B842675948E00ABB0DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AD6B9D2675949C00ABB0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4AD6BAB2675949C00ABB0DF /* NotificationController.swift in Sources */,
+				B4AD6BAD2675949C00ABB0DF /* ComplicationController.swift in Sources */,
+				B4AD6BA92675949C00ABB0DF /* ExtensionDelegate.swift in Sources */,
+				B4AD6BA72675949C00ABB0DF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4AD6B952675949B00ABB0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */;
+			targetProxy = B4AD6B942675949B00ABB0DF /* PBXContainerItemProxy */;
+		};
+		B4AD6BA42675949C00ABB0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */;
+			targetProxy = B4AD6BA32675949C00ABB0DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4AD6B872675948E00ABB0DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4AD6B882675948E00ABB0DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4AD6B8C2675949B00ABB0DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4AD6B8D2675949B00ABB0DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4AD6B972675949B00ABB0DF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4AD6B982675949B00ABB0DF /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4AD6BB22675949C00ABB0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4AD6BB32675949C00ABB0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B4AD6BB52675949C00ABB0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				INFOPLIST_FILE = "StrokeCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		B4AD6BB62675949C00ABB0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				INFOPLIST_FILE = "StrokeCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		B4AD6BB92675949C00ABB0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				IBSC_MODULE = StrokeCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "StrokeCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		B4AD6BBA2675949C00ABB0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				IBSC_MODULE = StrokeCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "StrokeCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		B4AD6BBD2675949C00ABB0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				INFOPLIST_FILE = StrokeCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4AD6BBE2675949C00ABB0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XPZNY5GTW;
+				INFOPLIST_FILE = StrokeCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "StrokeCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AD6BB22675949C00ABB0DF /* Debug */,
+				B4AD6BB32675949C00ABB0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AD6BB52675949C00ABB0DF /* Debug */,
+				B4AD6BB62675949C00ABB0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AD6BB92675949C00ABB0DF /* Debug */,
+				B4AD6BBA2675949C00ABB0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4AD6BBD2675949C00ABB0DF /* Debug */,
+				B4AD6BBE2675949C00ABB0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4AD6B762675948E00ABB0DF /* Project object */;
+}
