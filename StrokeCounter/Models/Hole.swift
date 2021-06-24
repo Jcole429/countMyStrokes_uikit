@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Hole {
+struct Hole: Codable {
     var holeNumber: Int
     var par: Int?
     var totalStrokesTaken: Int {

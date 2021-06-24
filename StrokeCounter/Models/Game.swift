@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Game {
+struct Game: Codable {
     var totalScore: Int {
         get {
             var sum = 0
