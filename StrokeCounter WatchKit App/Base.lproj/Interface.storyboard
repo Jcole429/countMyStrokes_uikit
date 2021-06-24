@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch44"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
@@ -11,10 +11,70 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StrokeCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="34" alignment="left" text="Label" id="Ray-DU-FJ7"/>
-                        <label width="136" height="34" alignment="left" text="Label" id="yM5-vr-ixj"/>
-                        <label width="136" height="34" alignment="left" text="Label" id="4hB-1D-seS"/>
-                        <label width="136" height="34" alignment="left" text="Label" id="tdf-9G-UmL"/>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="CCG-v7-3Cf">
+                            <items>
+                                <group width="1" alignment="left" id="hVR-sH-hgt">
+                                    <items>
+                                        <button width="40" alignment="left" title="-" id="4Di-V8-nJo">
+                                            <connections>
+                                                <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
+                                            </connections>
+                                        </button>
+                                        <label height="34" alignment="left" text="Label" id="Ray-DU-FJ7"/>
+                                        <button width="40" alignment="right" title="+" id="wSx-Vm-qPg">
+                                            <connections>
+                                                <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="uyF-UU-kkI">
+                                    <items>
+                                        <button width="40" alignment="left" title="-" id="jxb-Nu-6Jt">
+                                            <connections>
+                                                <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="yHg-3O-ij5"/>
+                                            </connections>
+                                        </button>
+                                        <label height="34" alignment="left" text="Label" id="yM5-vr-ixj"/>
+                                        <button width="40" alignment="right" title="+" id="dwZ-1M-Kgv">
+                                            <connections>
+                                                <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="2Mj-lh-EX0"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="OnI-oC-LJ7">
+                                    <items>
+                                        <button width="40" alignment="left" title="-" id="hBo-H5-ovd">
+                                            <connections>
+                                                <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="xrX-C7-bk3"/>
+                                            </connections>
+                                        </button>
+                                        <label height="34" alignment="left" text="Label" id="4hB-1D-seS"/>
+                                        <button width="40" alignment="right" title="+" id="PE1-XV-l7P">
+                                            <connections>
+                                                <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="cNy-IN-3Ov"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="d4a-PX-XFs">
+                                    <items>
+                                        <button width="40" alignment="left" title="-" id="SUw-1U-DZb">
+                                            <connections>
+                                                <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="gwn-ba-0Mp"/>
+                                            </connections>
+                                        </button>
+                                        <label height="34" alignment="left" text="Label" id="tdf-9G-UmL"/>
+                                        <button width="40" alignment="right" title="+" id="cfb-s7-Yy6">
+                                            <connections>
+                                                <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="hAJ-tf-Tfx"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="chipsLabel" destination="yM5-vr-ixj" id="qxA-61-6fa"/>
@@ -24,7 +84,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="344.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

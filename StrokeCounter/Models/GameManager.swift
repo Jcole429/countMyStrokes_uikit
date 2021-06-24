@@ -50,12 +50,51 @@ class GameManager: Codable {
         }
     }
     
+    func incrementCurrentHoleStrokesTaken() {
+        updateStrokesTaken(holeIndex: nil, newValue: getCurrentHole().strokesTaken + 1)
+    }
+    
+    func decrementCurrentHoleStrokesTaken() {
+        if getCurrentHole().strokesTaken > 0 {
+            updateStrokesTaken(holeIndex: nil, newValue: getCurrentHole().strokesTaken - 1)
+        }
+    }
+    
+    func incrementCurrentHoleChipsTaken() {
+        updateChipsTaken(holeIndex: nil, newValue: getCurrentHole().chipsTaken + 1)
+    }
+    
+    func decrementCurrentHoleChipsTaken() {
+        if getCurrentHole().chipsTaken > 0 {
+            updateChipsTaken(holeIndex: nil, newValue: getCurrentHole().chipsTaken - 1)
+        }
+    }
+    
+    func incrementCurrentHolePutsTaken() {
+        updatePutsTaken(holeIndex: nil, newValue: getCurrentHole().putsTaken + 1)
+    }
+    
+    func decrementCurrentHolePutsTaken() {
+        if getCurrentHole().putsTaken > 0 {
+            updatePutsTaken(holeIndex: nil, newValue: getCurrentHole().putsTaken - 1)
+        }
+    }
+    
+    func incrementCurrentHolePenaltiesTaken() {
+        updatePenaltiesTaken(holeIndex: nil, newValue: getCurrentHole().penaltiesTaken + 1)
+    }
+    
+    func decrementCurrentHolePenaltiesTaken() {
+        if getCurrentHole().penaltiesTaken > 0 {
+            updatePenaltiesTaken(holeIndex: nil, newValue: getCurrentHole().penaltiesTaken - 1)
+        }
+    }
+    
     func saveGameManager() {
         let encoder = PropertyListEncoder()
         do {
             let data = try encoder.encode(self)
             try data.write(to: GameManager.dataFilePath!)
-            print("encoded gameManager")
         } catch {
             print("Error encoding gameManager, \(error)")
         }

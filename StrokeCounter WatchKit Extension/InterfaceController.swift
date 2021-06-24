@@ -46,6 +46,68 @@ class InterfaceController: WKInterfaceController {
         putsLabel.setText("Puts: \(gameManager.getCurrentHole().putsTaken)")
         penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
     }
+    
+    func updatePhone() {
+        if let safeSession = watchSession {
+            if safeSession.activationState == .activated {
+                print("Watch - updateWatch()")
+                do {
+                    try WCSession.default.updateApplicationContext(["gameManager": gameManager.getData()!])
+                    print("Sent data to phone")
+                } catch {
+                    print("Error sending data to phone: \(error)")
+                }
+            }
+        }
+    }
+    
+    @IBAction func decrementStrokesTaken() {
+        gameManager.decrementCurrentHoleStrokesTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func incrementStrokesTaken() {
+        gameManager.incrementCurrentHoleStrokesTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func decrementChipsTaken() {
+        gameManager.decrementCurrentHoleChipsTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func incrementChipsTaken() {
+        gameManager.incrementCurrentHoleChipsTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func decrementPutsTaken() {
+        gameManager.decrementCurrentHolePutsTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func incrementPutsTaken() {
+        gameManager.incrementCurrentHolePutsTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func decrementPenaltiesTaken() {
+        gameManager.decrementCurrentHolePenaltiesTaken()
+        updateScreen()
+        updatePhone()
+    }
+    
+    @IBAction func incrementPenaltiesTaken() {
+        gameManager.incrementCurrentHolePenaltiesTaken()
+        updateScreen()
+        updatePhone()
+    }
 }
 
 extension InterfaceController: WCSessionDelegate {
@@ -54,7 +116,7 @@ extension InterfaceController: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("Watch - didReceiveApplicationContext: \(applicationContext)")
+        print("Watch - didReceiveApplicationContext")
         gameManager.importData(data: applicationContext["gameManager"] as! Data)
         updateScreen()
     }

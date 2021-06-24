@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         }
         
         gameManager.loadGameManager()
+        updateWatch()
         updateSteppers()
         updateScreen()
     }
@@ -50,7 +51,6 @@ class ViewController: UIViewController {
         penaltiesLabel.text = "Penalties: \(gameManager.getCurrentHole().penaltiesTaken)"
         totalScoreLabel.text = "Total Score: \(gameManager.game.totalScore)"
         gameManager.saveGameManager()
-        updateWatch()
     }
     
     func updateSteppers() {
@@ -96,18 +96,22 @@ class ViewController: UIViewController {
     
     @IBAction func strokesStepperPressed(_ sender: UIStepper) {
         gameManager.updateStrokesTaken(holeIndex: nil, newValue: Int(sender.value))
+        updateWatch()
         updateScreen()
     }
     @IBAction func chipsStepperPressed(_ sender: UIStepper) {
         gameManager.updateChipsTaken(holeIndex: nil, newValue: Int(sender.value))
+        updateWatch()
         updateScreen()
     }
     @IBAction func putsStepperPressed(_ sender: UIStepper) {
         gameManager.updatePutsTaken(holeIndex: nil, newValue: Int(sender.value))
+        updateWatch()
         updateScreen()
     }
     @IBAction func penaltiesStepperPRessed(_ sender: UIStepper) {
         gameManager.updatePenaltiesTaken(holeIndex: nil, newValue: Int(sender.value))
+        updateWatch()
         updateScreen()
     }
 }
@@ -126,7 +130,9 @@ extension ViewController: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("phone - didReceiveApplicationContext")
+        print("Phone - didReceiveApplicationContext")
+        gameManager.importData(data: applicationContext["gameManager"] as! Data)
+        updateScreen()
     }
     
 }
