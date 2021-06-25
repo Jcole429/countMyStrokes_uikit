@@ -15,6 +15,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var chipsLabel: WKInterfaceLabel!
     @IBOutlet weak var putsLabel: WKInterfaceLabel!
     @IBOutlet weak var penaltiesLabel: WKInterfaceLabel!
+    @IBOutlet weak var holeLabel: WKInterfaceLabel!
     
     var watchSession: WCSession?
     
@@ -45,18 +46,19 @@ class InterfaceController: WKInterfaceController {
         chipsLabel.setText("Chips: \(gameManager.getCurrentHole().chipsTaken)")
         putsLabel.setText("Puts: \(gameManager.getCurrentHole().putsTaken)")
         penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
+        holeLabel.setText("Hole #\(gameManager.currentHoleIndex + 1)")
     }
     
     func updatePhone() {
         if let safeSession = watchSession {
             if safeSession.activationState == .activated {
                 print("Watch - updateWatch()")
-                do {
-                    try WCSession.default.updateApplicationContext(["gameManager": gameManager.getData()!])
-                    print("Sent data to phone")
-                } catch {
+                WCSession.default.sendMessageData(gameManager.getData()!) { response in
+                    print("Response: \(response)")
+                } errorHandler: { error in
                     print("Error sending data to phone: \(error)")
                 }
+
             }
         }
     }
@@ -115,9 +117,8 @@ extension InterfaceController: WCSessionDelegate {
         print("Watch - activationDidCompleteWith")
     }
     
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("Watch - didReceiveApplicationContext")
-        gameManager.importData(data: applicationContext["gameManager"] as! Data)
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
+        gameManager.importData(data: messageData)
         updateScreen()
     }
 }

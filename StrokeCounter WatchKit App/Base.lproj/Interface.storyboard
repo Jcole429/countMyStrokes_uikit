@@ -13,60 +13,61 @@
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="CCG-v7-3Cf">
                             <items>
-                                <group width="1" alignment="left" id="hVR-sH-hgt">
+                                <label width="1" alignment="left" text="Hole:" textAlignment="center" id="axd-AF-0YK"/>
+                                <group width="1" height="33" alignment="left" id="hVR-sH-hgt">
                                     <items>
-                                        <button width="40" alignment="left" title="-" id="4Di-V8-nJo">
+                                        <button width="40" height="1" alignment="left" title="-" id="4Di-V8-nJo">
                                             <connections>
                                                 <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
                                             </connections>
                                         </button>
-                                        <label height="34" alignment="left" text="Label" id="Ray-DU-FJ7"/>
-                                        <button width="40" alignment="right" title="+" id="wSx-Vm-qPg">
+                                        <label height="1" alignment="left" text="Label" id="Ray-DU-FJ7"/>
+                                        <button width="40" height="1" alignment="right" title="+" id="wSx-Vm-qPg">
                                             <connections>
                                                 <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="uyF-UU-kkI">
+                                <group width="1" height="34" alignment="left" id="uyF-UU-kkI">
                                     <items>
-                                        <button width="40" alignment="left" title="-" id="jxb-Nu-6Jt">
+                                        <button width="40" height="1" alignment="left" title="-" id="jxb-Nu-6Jt">
                                             <connections>
                                                 <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="yHg-3O-ij5"/>
                                             </connections>
                                         </button>
-                                        <label height="34" alignment="left" text="Label" id="yM5-vr-ixj"/>
-                                        <button width="40" alignment="right" title="+" id="dwZ-1M-Kgv">
+                                        <label height="1" alignment="left" text="Label" id="yM5-vr-ixj"/>
+                                        <button width="40" height="1" alignment="right" title="+" id="dwZ-1M-Kgv">
                                             <connections>
                                                 <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="2Mj-lh-EX0"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="OnI-oC-LJ7">
+                                <group width="1" height="30" alignment="left" id="OnI-oC-LJ7">
                                     <items>
-                                        <button width="40" alignment="left" title="-" id="hBo-H5-ovd">
+                                        <button width="40" height="1" alignment="left" title="-" id="hBo-H5-ovd">
                                             <connections>
                                                 <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="xrX-C7-bk3"/>
                                             </connections>
                                         </button>
-                                        <label height="34" alignment="left" text="Label" id="4hB-1D-seS"/>
-                                        <button width="40" alignment="right" title="+" id="PE1-XV-l7P">
+                                        <label height="1" alignment="left" text="Label" id="4hB-1D-seS"/>
+                                        <button width="40" height="1" alignment="right" title="+" id="PE1-XV-l7P">
                                             <connections>
                                                 <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="cNy-IN-3Ov"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="d4a-PX-XFs">
+                                <group width="1" height="33" alignment="left" id="d4a-PX-XFs">
                                     <items>
-                                        <button width="40" alignment="left" title="-" id="SUw-1U-DZb">
+                                        <button width="40" height="1" alignment="left" title="-" id="SUw-1U-DZb">
                                             <connections>
                                                 <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="gwn-ba-0Mp"/>
                                             </connections>
                                         </button>
-                                        <label height="34" alignment="left" text="Label" id="tdf-9G-UmL"/>
-                                        <button width="40" alignment="right" title="+" id="cfb-s7-Yy6">
+                                        <label height="1" alignment="left" text="Label" id="tdf-9G-UmL"/>
+                                        <button width="40" height="1" alignment="right" title="+" id="cfb-s7-Yy6">
                                             <connections>
                                                 <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="hAJ-tf-Tfx"/>
                                             </connections>
@@ -78,13 +79,14 @@
                     </items>
                     <connections>
                         <outlet property="chipsLabel" destination="yM5-vr-ixj" id="qxA-61-6fa"/>
+                        <outlet property="holeLabel" destination="axd-AF-0YK" id="Hwf-l4-uNs"/>
                         <outlet property="penaltiesLabel" destination="tdf-9G-UmL" id="1d6-76-EGh"/>
                         <outlet property="putsLabel" destination="4hB-1D-seS" id="VZM-bA-fbc"/>
                         <outlet property="strokesLabel" destination="Ray-DU-FJ7" id="gpR-RV-uzO"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="344.5"/>
+            <point key="canvasLocation" x="219.52173913043478" y="343.79464285714289"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

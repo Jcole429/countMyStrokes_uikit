@@ -64,10 +64,10 @@ class ViewController: UIViewController {
         if let safeSession = watchSession {
             if safeSession.activationState == .activated {
                 print("Phone - updateWatch()")
-                do {
-                    try WCSession.default.updateApplicationContext(["gameManager": gameManager.getData()!])
-                } catch {
-                    print("Error sending data to watch: \(error)")
+                WCSession.default.sendMessageData(gameManager.getData()!) { response in
+                    print("Response: \(response)")
+                } errorHandler: { error in
+                    print("Error \(error)")
                 }
             }
         }
@@ -81,6 +81,7 @@ class ViewController: UIViewController {
             }
             updateScreen()
             updateSteppers()
+            updateWatch()
         }
     }
     
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
             gameManager.currentHoleIndex -= 1
             updateScreen()
             updateSteppers()
+            updateWatch()
         } else {
             print("No previous holes!")
         }
@@ -109,7 +111,7 @@ class ViewController: UIViewController {
         updateWatch()
         updateScreen()
     }
-    @IBAction func penaltiesStepperPRessed(_ sender: UIStepper) {
+    @IBAction func penaltiesStepperPressed(_ sender: UIStepper) {
         gameManager.updatePenaltiesTaken(holeIndex: nil, newValue: Int(sender.value))
         updateWatch()
         updateScreen()
@@ -129,10 +131,12 @@ extension ViewController: WCSessionDelegate {
         print("phone - sessionDidBecomeInactive")
     }
     
-    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("Phone - didReceiveApplicationContext")
-        gameManager.importData(data: applicationContext["gameManager"] as! Data)
-        updateScreen()
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
+        print("Phone - didReceiveMessageData")
+        DispatchQueue.main.async {
+            self.gameManager.importData(data: messageData)
+            self.updateSteppers()
+            self.updateScreen()
+        }
     }
-    
 }
