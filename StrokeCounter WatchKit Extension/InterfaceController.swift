@@ -28,6 +28,7 @@ class InterfaceController: WKInterfaceController {
             watchSession?.delegate = self
             watchSession?.activate()
         }
+        updateScreen()
     }
     
     override func willActivate() {
