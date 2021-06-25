@@ -9,71 +9,81 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StrokeCounter_WatchKit_App" customModuleProvider="target">
+                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StrokeCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="CCG-v7-3Cf">
+                        <label width="1" alignment="left" text="Hole:" textAlignment="center" id="axd-AF-0YK"/>
+                        <group width="1" height="33" alignment="left" id="hVR-sH-hgt" userLabel="Strokes Group">
                             <items>
-                                <label width="1" alignment="left" text="Hole:" textAlignment="center" id="axd-AF-0YK"/>
-                                <group width="1" height="33" alignment="left" id="hVR-sH-hgt">
-                                    <items>
-                                        <button width="40" height="1" alignment="left" title="-" id="4Di-V8-nJo">
-                                            <connections>
-                                                <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
-                                            </connections>
-                                        </button>
-                                        <label height="1" alignment="left" text="Label" id="Ray-DU-FJ7"/>
-                                        <button width="40" height="1" alignment="right" title="+" id="wSx-Vm-qPg">
-                                            <connections>
-                                                <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="34" alignment="left" id="uyF-UU-kkI">
-                                    <items>
-                                        <button width="40" height="1" alignment="left" title="-" id="jxb-Nu-6Jt">
-                                            <connections>
-                                                <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="yHg-3O-ij5"/>
-                                            </connections>
-                                        </button>
-                                        <label height="1" alignment="left" text="Label" id="yM5-vr-ixj"/>
-                                        <button width="40" height="1" alignment="right" title="+" id="dwZ-1M-Kgv">
-                                            <connections>
-                                                <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="2Mj-lh-EX0"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="30" alignment="left" id="OnI-oC-LJ7">
-                                    <items>
-                                        <button width="40" height="1" alignment="left" title="-" id="hBo-H5-ovd">
-                                            <connections>
-                                                <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="xrX-C7-bk3"/>
-                                            </connections>
-                                        </button>
-                                        <label height="1" alignment="left" text="Label" id="4hB-1D-seS"/>
-                                        <button width="40" height="1" alignment="right" title="+" id="PE1-XV-l7P">
-                                            <connections>
-                                                <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="cNy-IN-3Ov"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                                <group width="1" height="33" alignment="left" id="d4a-PX-XFs">
-                                    <items>
-                                        <button width="40" height="1" alignment="left" title="-" id="SUw-1U-DZb">
-                                            <connections>
-                                                <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="gwn-ba-0Mp"/>
-                                            </connections>
-                                        </button>
-                                        <label height="1" alignment="left" text="Label" id="tdf-9G-UmL"/>
-                                        <button width="40" height="1" alignment="right" title="+" id="cfb-s7-Yy6">
-                                            <connections>
-                                                <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="hAJ-tf-Tfx"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
+                                <button width="40" height="1" alignment="left" title="-" id="4Di-V8-nJo">
+                                    <connections>
+                                        <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
+                                    </connections>
+                                </button>
+                                <label height="1" alignment="left" text="Label" id="Ray-DU-FJ7"/>
+                                <button width="40" height="1" alignment="right" title="+" id="wSx-Vm-qPg">
+                                    <connections>
+                                        <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="34" alignment="left" id="uyF-UU-kkI" userLabel="Chips Group">
+                            <items>
+                                <button width="40" height="1" alignment="left" title="-" id="jxb-Nu-6Jt">
+                                    <connections>
+                                        <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="yHg-3O-ij5"/>
+                                    </connections>
+                                </button>
+                                <label height="1" alignment="left" text="Label" id="yM5-vr-ixj"/>
+                                <button width="40" height="1" alignment="right" title="+" id="dwZ-1M-Kgv">
+                                    <connections>
+                                        <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="2Mj-lh-EX0"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="30" alignment="left" id="OnI-oC-LJ7" userLabel="Puts Group">
+                            <items>
+                                <button width="40" height="1" alignment="left" title="-" id="hBo-H5-ovd">
+                                    <connections>
+                                        <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="xrX-C7-bk3"/>
+                                    </connections>
+                                </button>
+                                <label height="1" alignment="left" text="Label" id="4hB-1D-seS"/>
+                                <button width="40" height="1" alignment="right" title="+" id="PE1-XV-l7P">
+                                    <connections>
+                                        <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="cNy-IN-3Ov"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="33" alignment="left" id="d4a-PX-XFs" userLabel="Penalties Group">
+                            <items>
+                                <button width="40" height="1" alignment="left" title="-" id="SUw-1U-DZb">
+                                    <connections>
+                                        <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="gwn-ba-0Mp"/>
+                                    </connections>
+                                </button>
+                                <label height="1" alignment="left" text="Label" id="tdf-9G-UmL"/>
+                                <button width="40" height="1" alignment="right" title="+" id="cfb-s7-Yy6">
+                                    <connections>
+                                        <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="hAJ-tf-Tfx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Mla-cI-cKg">
+                            <items>
+                                <button width="0.5" alignment="left" title="Previous" id="t3S-yZ-500" userLabel="Previous Hole Button">
+                                    <connections>
+                                        <action selector="previousHoleButtonPressed" destination="AgC-eL-Hgc" id="FTY-5f-94X"/>
+                                    </connections>
+                                </button>
+                                <button width="0.51000000000000001" alignment="left" title="Next" id="C1R-ii-3tu" userLabel="Next Hole Button">
+                                    <connections>
+                                        <action selector="nextHoleButtonPressed" destination="AgC-eL-Hgc" id="Q8h-Mb-WpR"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>

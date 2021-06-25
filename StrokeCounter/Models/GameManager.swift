@@ -90,6 +90,27 @@ class GameManager: Codable {
         }
     }
     
+    func nextHole() -> Bool {
+        if self.currentHoleIndex < 17 {
+            self.currentHoleIndex += 1
+            if self.game.holes.count <= self.currentHoleIndex {
+                self.game.holes.append(Hole(holeNumber: self.currentHoleIndex + 1, par: nil))
+            }
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func previousHole() -> Bool {
+        if self.currentHoleIndex > 0 {
+            self.currentHoleIndex -= 1
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func saveGameManager() {
         let encoder = PropertyListEncoder()
         do {
@@ -123,7 +144,7 @@ class GameManager: Codable {
             self.game = updatedGameManager.game
             self.currentHoleIndex = updatedGameManager.currentHoleIndex
         } catch {
-             print("Error decoding gameManager, \(error)")
+            print("Error decoding gameManager, \(error)")
         }
     }
 }

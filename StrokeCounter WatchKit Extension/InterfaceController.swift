@@ -111,6 +111,23 @@ class InterfaceController: WKInterfaceController {
         updateScreen()
         updatePhone()
     }
+    @IBAction func previousHoleButtonPressed() {
+        let didWork = gameManager.previousHole()
+        if didWork {
+            updateScreen()
+            updatePhone()
+        } else {
+            print("No previous holes!")
+        }
+    }
+    @IBAction func nextHoleButtonPressed() {
+        let didWork = gameManager.nextHole()
+        if didWork{
+            updateScreen()
+            updatePhone()
+        }
+    }
+    
 }
 
 extension InterfaceController: WCSessionDelegate {

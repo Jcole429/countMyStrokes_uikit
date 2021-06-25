@@ -83,11 +83,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextHoleButtonPressed(_ sender: UIButton) {
-        if gameManager.currentHoleIndex < 17 {
-            gameManager.currentHoleIndex += 1
-            if gameManager.game.holes.count <= gameManager.currentHoleIndex {
-                gameManager.game.holes.append(Hole(holeNumber: gameManager.currentHoleIndex + 1, par: nil))
-            }
+        let didWork = gameManager.nextHole()
+        if didWork{
             updateScreen()
             updateSteppers()
             updateWatch()
@@ -95,8 +92,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func previousHoleButtonPressed(_ sender: UIButton) {
-        if gameManager.currentHoleIndex > 0 {
-            gameManager.currentHoleIndex -= 1
+        let didWork = gameManager.previousHole()
+        if didWork {
             updateScreen()
             updateSteppers()
             updateWatch()
