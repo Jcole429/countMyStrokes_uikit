@@ -9,9 +9,15 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StrokeCounter_WatchKit_App" customModuleProvider="target">
+                <controller spacing="1" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StrokeCounter_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text="Hole:" textAlignment="center" id="axd-AF-0YK"/>
+                        <label width="1" alignment="left" text=" Round Score:" textAlignment="left" id="rwI-lX-mDc" userLabel="Round Score"/>
+                        <group width="1" alignment="left" id="CNS-kl-cL3" userLabel="Hole Info Group">
+                            <items>
+                                <label width="0.5" alignment="left" text="Hole #" textAlignment="left" id="axd-AF-0YK"/>
+                                <label width="0.5" alignment="left" text="Strokes:" textAlignment="right" id="PJ2-Qb-CIn" userLabel="Hole Strokes Label"/>
+                            </items>
+                        </group>
                         <group width="1" height="33" alignment="left" id="hVR-sH-hgt" userLabel="Strokes Group">
                             <items>
                                 <button width="40" height="1" alignment="left" title="-" id="4Di-V8-nJo">
@@ -72,14 +78,14 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="Mla-cI-cKg">
+                        <group width="1" height="33" alignment="left" id="Mla-cI-cKg">
                             <items>
-                                <button width="0.5" alignment="left" title="Previous" id="t3S-yZ-500" userLabel="Previous Hole Button">
+                                <button width="0.5" height="1" alignment="left" title="Previous" id="t3S-yZ-500" userLabel="Previous Hole Button">
                                     <connections>
                                         <action selector="previousHoleButtonPressed" destination="AgC-eL-Hgc" id="FTY-5f-94X"/>
                                     </connections>
                                 </button>
-                                <button width="0.51000000000000001" alignment="left" title="Next" id="C1R-ii-3tu" userLabel="Next Hole Button">
+                                <button width="0.51000000000000001" height="1" alignment="left" title="Next" id="C1R-ii-3tu" userLabel="Next Hole Button">
                                     <connections>
                                         <action selector="nextHoleButtonPressed" destination="AgC-eL-Hgc" id="Q8h-Mb-WpR"/>
                                     </connections>
@@ -90,8 +96,10 @@
                     <connections>
                         <outlet property="chipsLabel" destination="yM5-vr-ixj" id="qxA-61-6fa"/>
                         <outlet property="holeLabel" destination="axd-AF-0YK" id="Hwf-l4-uNs"/>
+                        <outlet property="holeStrokesLabel" destination="PJ2-Qb-CIn" id="JhP-jN-pTN"/>
                         <outlet property="penaltiesLabel" destination="tdf-9G-UmL" id="1d6-76-EGh"/>
                         <outlet property="putsLabel" destination="4hB-1D-seS" id="VZM-bA-fbc"/>
+                        <outlet property="roundScoreLabel" destination="rwI-lX-mDc" id="BND-Ds-Rnz"/>
                         <outlet property="strokesLabel" destination="Ray-DU-FJ7" id="gpR-RV-uzO"/>
                     </connections>
                 </controller>

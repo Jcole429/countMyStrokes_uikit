@@ -16,6 +16,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var putsLabel: WKInterfaceLabel!
     @IBOutlet weak var penaltiesLabel: WKInterfaceLabel!
     @IBOutlet weak var holeLabel: WKInterfaceLabel!
+    @IBOutlet weak var roundScoreLabel: WKInterfaceLabel!
+    @IBOutlet weak var holeStrokesLabel: WKInterfaceLabel!
     
     var watchSession: WCSession?
     
@@ -48,18 +50,28 @@ class InterfaceController: WKInterfaceController {
         putsLabel.setText("Puts: \(gameManager.getCurrentHole().putsTaken)")
         penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
         holeLabel.setText("Hole #\(gameManager.currentHoleIndex + 1)")
+        holeStrokesLabel.setText("Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)")
+        roundScoreLabel.setText("  Round Score: \(gameManager.game.totalScore)")
     }
     
     func updatePhone() {
         if let safeSession = watchSession {
             if safeSession.activationState == .activated {
                 print("Watch - updateWatch()")
-                WCSession.default.sendMessageData(gameManager.getData()!) { response in
-                    print("Response: \(response)")
-                } errorHandler: { error in
-                    print("Error sending data to phone: \(error)")
+                if safeSession.isReachable {
+                    WCSession.default.sendMessageData(gameManager.getData()!) { response in
+                        print("Response: \(response)")
+                    } errorHandler: { error in
+                        print("Error sending data to phone: \(error)")
+                    }
+                } else {
+                    do {
+                        print("Watch - updateApplicationContext()")
+                        try WCSession.default.updateApplicationContext(["gameManager": gameManager.getData()!])
+                    } catch {
+                        print("Error sending data to phone: \(error)")
+                    }
                 }
-
             }
         }
     }

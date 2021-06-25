@@ -153,4 +153,14 @@ extension ViewController: WCSessionDelegate {
             self.updateScreen()
         }
     }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("Phone - didReceiveApplicationContext")
+        DispatchQueue.main.async {
+            self.gameManager.importData(data: applicationContext["gameManager"] as! Data)
+            self.updateScreen()
+            self.updateSteppers()
+        }
+        
+    }
 }
