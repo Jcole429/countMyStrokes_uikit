@@ -118,7 +118,14 @@ extension InterfaceController: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
+        print("Watch - didReceiveMessageData")
         gameManager.importData(data: messageData)
+        updateScreen()
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("Watch - didReceiveApplicationContext")
+        gameManager.importData(data: applicationContext["gameManager"] as! Data)
         updateScreen()
     }
 }

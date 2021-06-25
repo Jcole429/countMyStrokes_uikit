@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         updateSteppers()
         updateScreen()
     }
-        
+    
     func updateScreen() {
         holeNumLabel.text = "Hole #: \(gameManager.getCurrentHole().holeNumber)"
         totalStrokesLabel.text = "Total Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)"
@@ -63,11 +63,20 @@ class ViewController: UIViewController {
     func updateWatch() {
         if let safeSession = watchSession {
             if safeSession.activationState == .activated {
-                print("Phone - updateWatch()")
-                WCSession.default.sendMessageData(gameManager.getData()!) { response in
-                    print("Response: \(response)")
-                } errorHandler: { error in
-                    print("Error \(error)")
+                if safeSession.isReachable {
+                    print("Phone - sendMessageData()")
+                    WCSession.default.sendMessageData(gameManager.getData()!) { response in
+                        print("Response: \(response)")
+                    } errorHandler: { error in
+                        print("Error \(error)")
+                    }
+                } else {
+                    do {
+                        print("Phone - updateApplicationContext()")
+                        try WCSession.default.updateApplicationContext(["gameManager": gameManager.getData()!])
+                    } catch {
+                        print("Error sending data to watch: \(error)")
+                    }
                 }
             }
         }
@@ -115,6 +124,14 @@ class ViewController: UIViewController {
         gameManager.updatePenaltiesTaken(holeIndex: nil, newValue: Int(sender.value))
         updateWatch()
         updateScreen()
+    }
+    
+    @IBAction func newGameButton(_ sender: UIButton) {
+        gameManager = GameManager()
+        gameManager.saveGameManager()
+        updateWatch()
+        updateScreen()
+        updateSteppers()
     }
 }
 
