@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StrokeCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vecteezyoutdoor_activityGolf_nl0421background_generated" translatesAutoresizingMaskIntoConstraints="NO" id="aAB-2d-EME">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXx-J9-LPa">
+                                <rect key="frame" x="94" y="124" width="240" height="466"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i71-tk-BMh" userLabel="holeLabel">
-                                <rect key="frame" x="171.5" y="281" width="71" height="30"/>
+                                <rect key="frame" x="178.66666666666666" y="281" width="71" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmk-3E-wbu" userLabel="nextHoleButton">
-                                <rect key="frame" x="244" y="756" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <state key="normal" title="Next Hole">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gmk-3E-wbu" userLabel="nextHoleButton">
+                                <rect key="frame" x="288" y="810" width="100" height="42"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="paO-NM-tc0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Hole #3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -34,85 +44,82 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole Strokes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-bd-Ap5" userLabel="totalStrokesLabel">
-                                <rect key="frame" x="150.5" y="331" width="113" height="23"/>
+                                <rect key="frame" x="157.66666666666666" y="331" width="112.66666666666666" height="23"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZKj-73-xJR" userLabel="Strokes Stack">
-                                <rect key="frame" x="78" y="394" width="258" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZKj-73-xJR" userLabel="Strokes Stack">
+                                <rect key="frame" x="106.66666666666669" y="394" width="215" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-R7-Bwh" userLabel="strokesLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="oZr-gU-pQ5"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-TN-D5f">
-                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <rect key="frame" x="112.33333333333331" y="0.0" width="102.66666666666669" height="32"/>
                                         <connections>
                                             <action selector="strokesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nez-u0-yW8"/>
                                         </connections>
                                     </stepper>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="qFb-yo-nqI"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-w1-0CV" userLabel="Chips Stack">
-                                <rect key="frame" x="78" y="446" width="258" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-w1-0CV" userLabel="Chips Stack">
+                                <rect key="frame" x="106.66666666666669" y="446" width="215" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chips:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-gR-iiL" userLabel="chipsLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="GJk-bH-GGT"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-ld-dbq">
-                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <rect key="frame" x="112.33333333333331" y="0.0" width="102.66666666666669" height="32"/>
                                         <connections>
                                             <action selector="chipsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="tdW-TX-e1J"/>
                                         </connections>
                                     </stepper>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="Olx-ti-YQj"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-qT-nWI" userLabel="Puts Stack">
-                                <rect key="frame" x="78" y="498" width="258" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-qT-nWI" userLabel="Puts Stack">
+                                <rect key="frame" x="106.66666666666669" y="498" width="215" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-jJ-rpf" userLabel="putsLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="cAj-D9-oKn"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-D5-TY0">
-                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <rect key="frame" x="112.33333333333331" y="0.0" width="102.66666666666669" height="32"/>
                                         <connections>
                                             <action selector="putsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="GQG-F7-Hre"/>
                                         </connections>
                                     </stepper>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="U3h-7m-JW1"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-x8-0fB" userLabel="Penalties Stack">
-                                <rect key="frame" x="78" y="550" width="258" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-x8-0fB" userLabel="Penalties Stack">
+                                <rect key="frame" x="106.66666666666669" y="550" width="215" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penalties:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-FC-7g0" userLabel="penaltiesLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="125" id="tOS-1E-mrt"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penalties: 2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-FC-7g0" userLabel="penaltiesLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-YJ-OYv">
-                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <rect key="frame" x="112.33333333333331" y="0.0" width="102.66666666666669" height="32"/>
                                         <connections>
                                             <action selector="penaltiesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="cRT-jS-XlK"/>
                                         </connections>
@@ -120,15 +127,44 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-hg-gxp">
-                                <rect key="frame" x="144.5" y="124" width="125" height="30"/>
+                                <rect key="frame" x="151.66666666666666" y="124" width="124.99999999999997" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owG-hv-3ak" userLabel="previousHoleButton">
-                                <rect key="frame" x="20" y="44" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-4S-9jd" userLabel="previousHoleButton">
+                                <rect key="frame" x="40" y="810" width="100" height="42"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="OtQ-aJ-8Dc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Hole #1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousHoleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNY-Hl-Hm8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-e6-Zoe">
+                                <rect key="frame" x="196.33333333333334" y="164" width="35.333333333333343" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Golf Vectors by Vecteezy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-x2-MUd">
+                                <rect key="frame" x="270" y="876.33333333333337" width="153" height="15.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owG-hv-3ak" userLabel="newGameButton">
+                                <rect key="frame" x="139" y="624" width="150" height="42"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="jqD-3I-7KH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -137,51 +173,56 @@
                                     <action selector="previousHoleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ae-aJ-S0R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-4S-9jd" userLabel="previousHoleButton">
-                                <rect key="frame" x="20" y="756" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
-                                <state key="normal" title="Previous Hole">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="previousHoleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNY-Hl-Hm8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-e6-Zoe">
-                                <rect key="frame" x="189.5" y="164" width="35.5" height="37"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vnS-e6-Zoe" firstAttribute="top" secondItem="CjG-hg-gxp" secondAttribute="bottom" constant="10" id="5UG-Oo-MTw"/>
+                            <constraint firstItem="xAh-4S-9jd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="6bt-91-LWk"/>
                             <constraint firstItem="dnk-qT-nWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="725-61-Q33"/>
+                            <constraint firstItem="IyD-x2-MUd" firstAttribute="bottom" secondItem="Gmk-3E-wbu" secondAttribute="bottom" constant="40" id="8oy-h1-JNI"/>
+                            <constraint firstItem="XXx-J9-LPa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aK-nE-ve2"/>
                             <constraint firstItem="dnk-qT-nWI" firstAttribute="top" secondItem="F9O-w1-0CV" secondAttribute="bottom" constant="20" id="9em-Yk-yV6"/>
                             <constraint firstItem="vnS-e6-Zoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9j2-5W-FDq"/>
                             <constraint firstItem="i71-tk-BMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AJG-bu-RKj"/>
                             <constraint firstItem="RtC-x8-0fB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoM-bP-ZHl"/>
+                            <constraint firstItem="owG-hv-3ak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BjG-Kh-qno"/>
                             <constraint firstItem="CjG-hg-gxp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuJ-vx-eDq"/>
                             <constraint firstItem="i71-tk-BMh" firstAttribute="top" secondItem="vnS-e6-Zoe" secondAttribute="bottom" constant="80" id="CTO-yz-9J1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XXx-J9-LPa" secondAttribute="bottom" constant="302" id="EDF-Gs-VLJ"/>
                             <constraint firstItem="ZKj-73-xJR" firstAttribute="top" secondItem="x7C-bd-Ap5" secondAttribute="bottom" constant="40" id="HVh-Qv-tHz"/>
+                            <constraint firstItem="IyD-x2-MUd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KE6-HH-UWU"/>
+                            <constraint firstItem="IyD-x2-MUd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LA8-Ox-mJk"/>
+                            <constraint firstItem="XXx-J9-LPa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Lei-ym-FCE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gmk-3E-wbu" secondAttribute="trailing" constant="40" id="M5e-Ia-Kuk"/>
+                            <constraint firstItem="aAB-2d-EME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9A-v7-Ak0"/>
                             <constraint firstItem="x7C-bd-Ap5" firstAttribute="top" secondItem="i71-tk-BMh" secondAttribute="bottom" constant="20" id="MCD-zs-Uds"/>
                             <constraint firstItem="F9O-w1-0CV" firstAttribute="top" secondItem="ZKj-73-xJR" secondAttribute="bottom" constant="20" id="QN9-qA-lMU"/>
+                            <constraint firstItem="aAB-2d-EME" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QrP-Ih-s4z"/>
+                            <constraint firstAttribute="bottom" secondItem="aAB-2d-EME" secondAttribute="bottom" id="Xot-EX-WY4"/>
+                            <constraint firstItem="XXx-J9-LPa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="afn-aS-npT"/>
                             <constraint firstItem="x7C-bd-Ap5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ayO-YS-Mtf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IyD-x2-MUd" secondAttribute="trailing" constant="5" id="cpw-dV-CYA"/>
+                            <constraint firstItem="owG-hv-3ak" firstAttribute="top" secondItem="XXx-J9-LPa" secondAttribute="top" constant="500" id="ctX-K5-4Bw"/>
                             <constraint firstItem="CjG-hg-gxp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="eX8-w9-aee"/>
                             <constraint firstItem="RtC-x8-0fB" firstAttribute="top" secondItem="dnk-qT-nWI" secondAttribute="bottom" constant="20" id="fn3-iu-UHi"/>
                             <constraint firstItem="F9O-w1-0CV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7c-pB-Qcl"/>
+                            <constraint firstItem="RtC-x8-0fB" firstAttribute="leading" secondItem="dnk-qT-nWI" secondAttribute="leading" id="nUt-CR-eZL"/>
+                            <constraint firstItem="aAB-2d-EME" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sIS-ii-CdE"/>
                             <constraint firstItem="ZKj-73-xJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tca-yS-JqP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XXx-J9-LPa" secondAttribute="trailing" constant="94" id="uMB-si-7WO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xAh-4S-9jd" secondAttribute="bottom" constant="40" id="vhZ-Hf-cw1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chipsLabel" destination="hel-gR-iiL" id="qtu-kN-eq5"/>
                         <outlet property="chipsStepper" destination="DGk-ld-dbq" id="nFQ-R4-OSv"/>
                         <outlet property="holeNumLabel" destination="i71-tk-BMh" id="DKt-S0-7fg"/>
+                        <outlet property="newGameButton" destination="owG-hv-3ak" id="19Z-k8-MRx"/>
+                        <outlet property="nextHoleButton" destination="Gmk-3E-wbu" id="Ocr-5j-cMh"/>
                         <outlet property="penaltiesLabel" destination="qqD-FC-7g0" id="Kce-x0-yui"/>
                         <outlet property="penaltiesStepper" destination="ZhT-YJ-OYv" id="IZQ-WQ-u0E"/>
+                        <outlet property="previousHoleButton" destination="xAh-4S-9jd" id="kLP-zC-KRd"/>
                         <outlet property="putsLabel" destination="b7e-jJ-rpf" id="Cja-FR-FSf"/>
                         <outlet property="putsStepper" destination="iEl-D5-TY0" id="bkC-KG-PiO"/>
                         <outlet property="strokesLabel" destination="VYq-R7-Bwh" id="gS0-iG-14L"/>
@@ -192,15 +233,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+            <point key="canvasLocation" x="18.22429906542056" y="88.120950323974085"/>
         </scene>
     </scenes>
     <resources>
+        <image name="vecteezyoutdoor_activityGolf_nl0421background_generated" width="1229" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

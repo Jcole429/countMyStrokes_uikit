@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var putsStepper: UIStepper!
     @IBOutlet weak var penaltiesStepper: UIStepper!
     
+    @IBOutlet weak var previousHoleButton: UIButton!
+    @IBOutlet weak var nextHoleButton: UIButton!
+    @IBOutlet weak var newGameButton: UIButton!
+    
     var watchSession: WCSession?
     
     var gameManager = GameManager()
@@ -35,6 +39,10 @@ class ViewController: UIViewController {
             watchSession?.delegate = self
             watchSession?.activate()
         }
+        
+        newGameButton.layer.cornerRadius = 8
+        previousHoleButton.layer.cornerRadius = 8
+        nextHoleButton.layer.cornerRadius = 8
         
         gameManager.loadGameManager()
         updateWatch()
@@ -50,6 +58,21 @@ class ViewController: UIViewController {
         putsLabel.text = "Puts: \(gameManager.getCurrentHole().putsTaken)"
         penaltiesLabel.text = "Penalties: \(gameManager.getCurrentHole().penaltiesTaken)"
         totalScoreLabel.text = "\(gameManager.game.totalScore)"
+        
+        if gameManager.currentHoleIndex == 0 {
+            previousHoleButton.isHidden = true
+        } else {
+            previousHoleButton.isHidden = false
+            previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)", for: .normal)
+        }
+        
+        if gameManager.currentHoleIndex == 17 {
+            nextHoleButton.isHidden = true
+        } else {
+            nextHoleButton.isHidden = false
+            nextHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex + 2)", for: .normal)
+        }
+        
         gameManager.saveGameManager()
     }
     
