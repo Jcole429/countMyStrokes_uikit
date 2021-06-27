@@ -17,10 +17,10 @@
 		B4AD6B892675948E00ABB0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B872675948E00ABB0DF /* Main.storyboard */; };
 		B4AD6B8B2675949B00ABB0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */; };
 		B4AD6B8E2675949B00ABB0DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B8C2675949B00ABB0DF /* LaunchScreen.storyboard */; };
-		B4AD6B932675949B00ABB0DF /* StrokeCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AD6B932675949B00ABB0DF /* CountMyStrokes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B4AD6B922675949B00ABB0DF /* CountMyStrokes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4AD6B992675949B00ABB0DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B972675949B00ABB0DF /* Interface.storyboard */; };
 		B4AD6B9B2675949B00ABB0DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */; };
-		B4AD6BA22675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4AD6BA22675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B4AD6BA12675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B4AD6BA72675949C00ABB0DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */; };
 		B4AD6BA92675949C00ABB0DF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BA82675949C00ABB0DF /* ExtensionDelegate.swift */; };
 		B4AD6BAB2675949C00ABB0DF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD6BAA2675949C00ABB0DF /* NotificationController.swift */; };
@@ -54,7 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B4AD6BA22675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex in Embed App Extensions */,
+				B4AD6BA22675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B4AD6B932675949B00ABB0DF /* StrokeCounter WatchKit App.app in Embed Watch Content */,
+				B4AD6B932675949B00ABB0DF /* CountMyStrokes WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,7 @@
 
 /* Begin PBXFileReference section */
 		B423074B2682792F003F1744 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6B7E2675948E00ABB0DF /* CountMyStrokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMyStrokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AD6B812675948E00ABB0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AD6B832675948E00ABB0DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B4AD6B852675948E00ABB0DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,11 +82,11 @@
 		B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AD6B8D2675949B00ABB0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4AD6B8F2675949B00ABB0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StrokeCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6B922675949B00ABB0DF /* CountMyStrokes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CountMyStrokes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AD6B982675949B00ABB0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AD6B9C2675949B00ABB0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StrokeCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AD6BA12675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CountMyStrokes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		B4AD6BA82675949C00ABB0DF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B4AD6BAA2675949C00ABB0DF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		B4AD6B7F2675948E00ABB0DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */,
-				B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */,
-				B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */,
+				B4AD6B7E2675948E00ABB0DF /* CountMyStrokes.app */,
+				B4AD6B922675949B00ABB0DF /* CountMyStrokes WatchKit App.app */,
+				B4AD6BA12675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4AD6B7D2675948E00ABB0DF /* StrokeCounter */ = {
+		B4AD6B7D2675948E00ABB0DF /* CountMyStrokes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter" */;
+			buildConfigurationList = B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes" */;
 			buildPhases = (
 				B4AD6B7A2675948E00ABB0DF /* Sources */,
 				B4AD6B7B2675948E00ABB0DF /* Frameworks */,
@@ -218,14 +218,14 @@
 			dependencies = (
 				B4AD6B952675949B00ABB0DF /* PBXTargetDependency */,
 			);
-			name = StrokeCounter;
+			name = CountMyStrokes;
 			productName = StrokeCounter;
-			productReference = B4AD6B7E2675948E00ABB0DF /* StrokeCounter.app */;
+			productReference = B4AD6B7E2675948E00ABB0DF /* CountMyStrokes.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */ = {
+		B4AD6B912675949B00ABB0DF /* CountMyStrokes WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit App" */;
+			buildConfigurationList = B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes WatchKit App" */;
 			buildPhases = (
 				B4AD6B902675949B00ABB0DF /* Resources */,
 				B4AD6BB72675949C00ABB0DF /* Embed App Extensions */,
@@ -235,14 +235,14 @@
 			dependencies = (
 				B4AD6BA42675949C00ABB0DF /* PBXTargetDependency */,
 			);
-			name = "StrokeCounter WatchKit App";
+			name = "CountMyStrokes WatchKit App";
 			productName = "StrokeCounter WatchKit App";
-			productReference = B4AD6B922675949B00ABB0DF /* StrokeCounter WatchKit App.app */;
+			productReference = B4AD6B922675949B00ABB0DF /* CountMyStrokes WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */ = {
+		B4AD6BA02675949C00ABB0DF /* CountMyStrokes WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit Extension" */;
+			buildConfigurationList = B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes WatchKit Extension" */;
 			buildPhases = (
 				B4AD6B9D2675949C00ABB0DF /* Sources */,
 				B4AD6B9E2675949C00ABB0DF /* Frameworks */,
@@ -252,9 +252,9 @@
 			);
 			dependencies = (
 			);
-			name = "StrokeCounter WatchKit Extension";
+			name = "CountMyStrokes WatchKit Extension";
 			productName = "StrokeCounter WatchKit Extension";
-			productReference = B4AD6BA12675949C00ABB0DF /* StrokeCounter WatchKit Extension.appex */;
+			productReference = B4AD6BA12675949C00ABB0DF /* CountMyStrokes WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -277,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "StrokeCounter" */;
+			buildConfigurationList = B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "CountMyStrokes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -290,9 +290,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4AD6B7D2675948E00ABB0DF /* StrokeCounter */,
-				B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */,
-				B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */,
+				B4AD6B7D2675948E00ABB0DF /* CountMyStrokes */,
+				B4AD6B912675949B00ABB0DF /* CountMyStrokes WatchKit App */,
+				B4AD6BA02675949C00ABB0DF /* CountMyStrokes WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -360,12 +360,12 @@
 /* Begin PBXTargetDependency section */
 		B4AD6B952675949B00ABB0DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4AD6B912675949B00ABB0DF /* StrokeCounter WatchKit App */;
+			target = B4AD6B912675949B00ABB0DF /* CountMyStrokes WatchKit App */;
 			targetProxy = B4AD6B942675949B00ABB0DF /* PBXContainerItemProxy */;
 		};
 		B4AD6BA42675949C00ABB0DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4AD6BA02675949C00ABB0DF /* StrokeCounter WatchKit Extension */;
+			target = B4AD6BA02675949C00ABB0DF /* CountMyStrokes WatchKit Extension */;
 			targetProxy = B4AD6BA32675949C00ABB0DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -641,7 +641,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "StrokeCounter" */ = {
+		B4AD6B792675948E00ABB0DF /* Build configuration list for PBXProject "CountMyStrokes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4AD6BB22675949C00ABB0DF /* Debug */,
@@ -650,7 +650,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit Extension" */ = {
+		B4AD6BB42675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4AD6BB52675949C00ABB0DF /* Debug */,
@@ -659,7 +659,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter WatchKit App" */ = {
+		B4AD6BB82675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4AD6BB92675949C00ABB0DF /* Debug */,
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "StrokeCounter" */ = {
+		B4AD6BBC2675949C00ABB0DF /* Build configuration list for PBXNativeTarget "CountMyStrokes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4AD6BBD2675949C00ABB0DF /* Debug */,

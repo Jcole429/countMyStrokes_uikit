@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4AD6B7D2675948E00ABB0DF"
-               BuildableName = "StrokeCounter.app"
-               BlueprintName = "StrokeCounter"
-               ReferencedContainer = "container:StrokeCounter.xcodeproj">
+               BuildableName = "CountMyStrokes.app"
+               BlueprintName = "CountMyStrokes"
+               ReferencedContainer = "container:CountMyStrokes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4AD6B7D2675948E00ABB0DF"
-            BuildableName = "StrokeCounter.app"
-            BlueprintName = "StrokeCounter"
-            ReferencedContainer = "container:StrokeCounter.xcodeproj">
+            BuildableName = "CountMyStrokes.app"
+            BlueprintName = "CountMyStrokes"
+            ReferencedContainer = "container:CountMyStrokes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4AD6B7D2675948E00ABB0DF"
-            BuildableName = "StrokeCounter.app"
-            BlueprintName = "StrokeCounter"
-            ReferencedContainer = "container:StrokeCounter.xcodeproj">
+            BuildableName = "CountMyStrokes.app"
+            BlueprintName = "CountMyStrokes"
+            ReferencedContainer = "container:CountMyStrokes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
