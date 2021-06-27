@@ -16,10 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hole #:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i71-tk-BMh" userLabel="holeLabel">
-                                <rect key="frame" x="132" y="297" width="150" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i71-tk-BMh" userLabel="holeLabel">
+                                <rect key="frame" x="171.5" y="281" width="71" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -34,66 +33,95 @@
                                     <action selector="nextHoleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b2s-p9-ZcY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hole Strokes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-bd-Ap5" userLabel="totalStrokesLabel">
-                                <rect key="frame" x="132" y="375" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole Strokes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7C-bd-Ap5" userLabel="totalStrokesLabel">
+                                <rect key="frame" x="150.5" y="331" width="113" height="23"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Strokes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-R7-Bwh" userLabel="strokesLabel">
-                                <rect key="frame" x="56" y="415" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chips:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-gR-iiL" userLabel="chipsLabel">
-                                <rect key="frame" x="56" y="455" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-jJ-rpf" userLabel="putsLabel">
-                                <rect key="frame" x="56" y="495" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Penalties:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-FC-7g0" userLabel="penaltiesLabel">
-                                <rect key="frame" x="56" y="535" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-TN-D5f">
-                                <rect key="frame" x="214" y="415" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="strokesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nez-u0-yW8"/>
-                                </connections>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-ld-dbq">
-                                <rect key="frame" x="214" y="455" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="chipsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="tdW-TX-e1J"/>
-                                </connections>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-D5-TY0">
-                                <rect key="frame" x="214" y="495" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="putsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="GQG-F7-Hre"/>
-                                </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-e6-Zoe">
-                                <rect key="frame" x="132" y="268" width="150" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZKj-73-xJR" userLabel="Strokes Stack">
+                                <rect key="frame" x="78" y="394" width="258" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-R7-Bwh" userLabel="strokesLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="oZr-gU-pQ5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-TN-D5f">
+                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <connections>
+                                            <action selector="strokesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nez-u0-yW8"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-w1-0CV" userLabel="Chips Stack">
+                                <rect key="frame" x="78" y="446" width="258" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chips:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-gR-iiL" userLabel="chipsLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="GJk-bH-GGT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DGk-ld-dbq">
+                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <connections>
+                                            <action selector="chipsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="tdW-TX-e1J"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-qT-nWI" userLabel="Puts Stack">
+                                <rect key="frame" x="78" y="498" width="258" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puts:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-jJ-rpf" userLabel="putsLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="cAj-D9-oKn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-D5-TY0">
+                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <connections>
+                                            <action selector="putsStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="GQG-F7-Hre"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-x8-0fB" userLabel="Penalties Stack">
+                                <rect key="frame" x="78" y="550" width="258" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penalties:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-FC-7g0" userLabel="penaltiesLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="tOS-1E-mrt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-YJ-OYv">
+                                        <rect key="frame" x="133" y="0.0" width="125" height="32"/>
+                                        <connections>
+                                            <action selector="penaltiesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="cRT-jS-XlK"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjG-hg-gxp">
+                                <rect key="frame" x="144.5" y="124" width="125" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -120,16 +148,33 @@
                                     <action selector="previousHoleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNY-Hl-Hm8"/>
                                 </connections>
                             </button>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZhT-YJ-OYv">
-                                <rect key="frame" x="214" y="535" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="penaltiesStepperPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="cRT-jS-XlK"/>
-                                </connections>
-                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnS-e6-Zoe">
+                                <rect key="frame" x="189.5" y="164" width="35.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vnS-e6-Zoe" firstAttribute="top" secondItem="CjG-hg-gxp" secondAttribute="bottom" constant="10" id="5UG-Oo-MTw"/>
+                            <constraint firstItem="dnk-qT-nWI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="725-61-Q33"/>
+                            <constraint firstItem="dnk-qT-nWI" firstAttribute="top" secondItem="F9O-w1-0CV" secondAttribute="bottom" constant="20" id="9em-Yk-yV6"/>
+                            <constraint firstItem="vnS-e6-Zoe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9j2-5W-FDq"/>
+                            <constraint firstItem="i71-tk-BMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AJG-bu-RKj"/>
+                            <constraint firstItem="RtC-x8-0fB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoM-bP-ZHl"/>
+                            <constraint firstItem="CjG-hg-gxp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuJ-vx-eDq"/>
+                            <constraint firstItem="i71-tk-BMh" firstAttribute="top" secondItem="vnS-e6-Zoe" secondAttribute="bottom" constant="80" id="CTO-yz-9J1"/>
+                            <constraint firstItem="ZKj-73-xJR" firstAttribute="top" secondItem="x7C-bd-Ap5" secondAttribute="bottom" constant="40" id="HVh-Qv-tHz"/>
+                            <constraint firstItem="x7C-bd-Ap5" firstAttribute="top" secondItem="i71-tk-BMh" secondAttribute="bottom" constant="20" id="MCD-zs-Uds"/>
+                            <constraint firstItem="F9O-w1-0CV" firstAttribute="top" secondItem="ZKj-73-xJR" secondAttribute="bottom" constant="20" id="QN9-qA-lMU"/>
+                            <constraint firstItem="x7C-bd-Ap5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ayO-YS-Mtf"/>
+                            <constraint firstItem="CjG-hg-gxp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="eX8-w9-aee"/>
+                            <constraint firstItem="RtC-x8-0fB" firstAttribute="top" secondItem="dnk-qT-nWI" secondAttribute="bottom" constant="20" id="fn3-iu-UHi"/>
+                            <constraint firstItem="F9O-w1-0CV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7c-pB-Qcl"/>
+                            <constraint firstItem="ZKj-73-xJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tca-yS-JqP"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="chipsLabel" destination="hel-gR-iiL" id="qtu-kN-eq5"/>
