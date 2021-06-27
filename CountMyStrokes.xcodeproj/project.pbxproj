@@ -515,13 +515,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
-				INFOPLIST_FILE = "StrokeCounter WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.CountMyStrokes.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -537,13 +537,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
-				INFOPLIST_FILE = "StrokeCounter WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.CountMyStrokes.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -563,8 +563,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
 				IBSC_MODULE = StrokeCounter_WatchKit_Extension;
-				INFOPLIST_FILE = "StrokeCounter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp;
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.CountMyStrokes.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -583,8 +583,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
 				IBSC_MODULE = StrokeCounter_WatchKit_Extension;
-				INFOPLIST_FILE = "StrokeCounter WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.StrokeCounter.watchkitapp;
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcole.CountMyStrokes.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -602,7 +602,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
-				INFOPLIST_FILE = StrokeCounter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,7 +623,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPZNY5GTW;
-				INFOPLIST_FILE = StrokeCounter/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CountMyStrokes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
