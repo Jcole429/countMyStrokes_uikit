@@ -119,9 +119,9 @@
 		B4AD6B752675948E00ABB0DF = {
 			isa = PBXGroup;
 			children = (
-				B4AD6B802675948E00ABB0DF /* StrokeCounter */,
-				B4AD6B962675949B00ABB0DF /* StrokeCounter WatchKit App */,
-				B4AD6BA52675949C00ABB0DF /* StrokeCounter WatchKit Extension */,
+				B4AD6B802675948E00ABB0DF /* CountMyStrokes */,
+				B4AD6B962675949B00ABB0DF /* CountMyStrokes WatchKit App */,
+				B4AD6BA52675949C00ABB0DF /* CountMyStrokes WatchKit Extension */,
 				B4AD6B7F2675948E00ABB0DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4AD6B802675948E00ABB0DF /* StrokeCounter */ = {
+		B4AD6B802675948E00ABB0DF /* CountMyStrokes */ = {
 			isa = PBXGroup;
 			children = (
 				B4AD6BC12675D53200ABB0DF /* Models */,
@@ -145,20 +145,20 @@
 				B4AD6B8A2675949B00ABB0DF /* Assets.xcassets */,
 				B4AD6B8F2675949B00ABB0DF /* Info.plist */,
 			);
-			path = StrokeCounter;
+			path = CountMyStrokes;
 			sourceTree = "<group>";
 		};
-		B4AD6B962675949B00ABB0DF /* StrokeCounter WatchKit App */ = {
+		B4AD6B962675949B00ABB0DF /* CountMyStrokes WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				B4AD6B972675949B00ABB0DF /* Interface.storyboard */,
 				B4AD6B9A2675949B00ABB0DF /* Assets.xcassets */,
 				B4AD6B9C2675949B00ABB0DF /* Info.plist */,
 			);
-			path = "StrokeCounter WatchKit App";
+			path = "CountMyStrokes WatchKit App";
 			sourceTree = "<group>";
 		};
-		B4AD6BA52675949C00ABB0DF /* StrokeCounter WatchKit Extension */ = {
+		B4AD6BA52675949C00ABB0DF /* CountMyStrokes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				B4AD6BA62675949C00ABB0DF /* InterfaceController.swift */,
@@ -169,7 +169,7 @@
 				B4AD6BB02675949C00ABB0DF /* Info.plist */,
 				B4AD6BB12675949C00ABB0DF /* PushNotificationPayload.apns */,
 			);
-			path = "StrokeCounter WatchKit Extension";
+			path = "CountMyStrokes WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		B4AD6BBF2675D50300ABB0DF /* Views */ = {
