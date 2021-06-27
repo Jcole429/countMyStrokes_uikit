@@ -55,7 +55,7 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "StrokeCounter WatchKit Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "CountMyStrokes WatchKit Extension/PushNotificationPayload.apns">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -74,7 +74,7 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "StrokeCounter WatchKit Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "CountMyStrokes WatchKit Extension/PushNotificationPayload.apns">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
