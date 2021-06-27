@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextHoleButton: UIButton!
     @IBOutlet weak var newGameButton: UIButton!
     
+    @IBOutlet weak var darkAreaImageView: UIImageView!
+    
     var watchSession: WCSession?
     
     var gameManager = GameManager()
@@ -43,6 +45,7 @@ class ViewController: UIViewController {
         newGameButton.layer.cornerRadius = 8
         previousHoleButton.layer.cornerRadius = 8
         nextHoleButton.layer.cornerRadius = 8
+        darkAreaImageView.layer.cornerRadius = 8
         
         gameManager.loadGameManager()
         updateWatch()
