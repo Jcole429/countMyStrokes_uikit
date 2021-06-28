@@ -18,6 +18,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var holeLabel: WKInterfaceLabel!
     @IBOutlet weak var roundScoreLabel: WKInterfaceLabel!
     @IBOutlet weak var holeStrokesLabel: WKInterfaceLabel!
+    @IBOutlet weak var previousHoleButton: WKInterfaceButton!
+    @IBOutlet weak var nextHoleButton: WKInterfaceButton!
     
     var watchSession: WCSession?
     
@@ -52,6 +54,9 @@ class InterfaceController: WKInterfaceController {
         holeLabel.setText("Hole #\(gameManager.currentHoleIndex + 1)")
         holeStrokesLabel.setText("Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)")
         roundScoreLabel.setText("  Round Score: \(gameManager.game.totalScore)")
+        
+        previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)")
+        nextHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex + 2)")
     }
     
     func updatePhone() {

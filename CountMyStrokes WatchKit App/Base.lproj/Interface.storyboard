@@ -97,8 +97,9 @@
                         <outlet property="chipsLabel" destination="yM5-vr-ixj" id="qxA-61-6fa"/>
                         <outlet property="holeLabel" destination="axd-AF-0YK" id="Hwf-l4-uNs"/>
                         <outlet property="holeStrokesLabel" destination="PJ2-Qb-CIn" id="JhP-jN-pTN"/>
+                        <outlet property="nextHoleButton" destination="C1R-ii-3tu" id="yrj-5f-caE"/>
                         <outlet property="penaltiesLabel" destination="tdf-9G-UmL" id="1d6-76-EGh"/>
-                        <outlet property="previousHoleButton" destination="t3S-yZ-500" id="2DA-lD-3wS"/>
+                        <outlet property="previousHoleButton" destination="t3S-yZ-500" id="jsg-8L-frh"/>
                         <outlet property="putsLabel" destination="4hB-1D-seS" id="VZM-bA-fbc"/>
                         <outlet property="roundScoreLabel" destination="rwI-lX-mDc" id="BND-Ds-Rnz"/>
                         <outlet property="strokesLabel" destination="Ray-DU-FJ7" id="gpR-RV-uzO"/>
