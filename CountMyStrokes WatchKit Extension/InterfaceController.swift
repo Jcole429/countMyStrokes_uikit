@@ -11,15 +11,14 @@ import WatchConnectivity
 
 
 class InterfaceController: WKInterfaceController {
-    @IBOutlet weak var strokesLabel: WKInterfaceLabel!
-    @IBOutlet weak var chipsLabel: WKInterfaceLabel!
-    @IBOutlet weak var putsLabel: WKInterfaceLabel!
-    @IBOutlet weak var penaltiesLabel: WKInterfaceLabel!
+    @IBOutlet weak var generalCounterButton: WKInterfaceButton!
+    @IBOutlet weak var chipsCounterButton: WKInterfaceButton!
+    @IBOutlet weak var putsCounterButton: WKInterfaceButton!
+    @IBOutlet weak var penaltyCounterButton: WKInterfaceButton!
+    
     @IBOutlet weak var holeLabel: WKInterfaceLabel!
     @IBOutlet weak var roundScoreLabel: WKInterfaceLabel!
     @IBOutlet weak var holeStrokesLabel: WKInterfaceLabel!
-    @IBOutlet weak var previousHoleButton: WKInterfaceButton!
-    @IBOutlet weak var nextHoleButton: WKInterfaceButton!
     
     var watchSession: WCSession?
     
@@ -47,26 +46,14 @@ class InterfaceController: WKInterfaceController {
     
     func updateScreen() {
         print("Watch - updateScreen()")
-        strokesLabel.setText("General: \(gameManager.getCurrentHole().strokesTaken)")
-        chipsLabel.setText("Chips: \(gameManager.getCurrentHole().chipsTaken)")
-        putsLabel.setText("Puts: \(gameManager.getCurrentHole().putsTaken)")
-        penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
+        generalCounterButton.setTitle("General\n (\(gameManager.getCurrentHole().strokesTaken))")
+        chipsCounterButton.setTitle("Chips\n (\(gameManager.getCurrentHole().chipsTaken))")
+        putsCounterButton.setTitle("Puts\n (\(gameManager.getCurrentHole().putsTaken))")
+        penaltyCounterButton.setTitle("Penalties\n (\(gameManager.getCurrentHole().penaltiesTaken))")
+
         holeLabel.setText("Hole #\(gameManager.currentHoleIndex + 1)")
         holeStrokesLabel.setText("Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)")
         roundScoreLabel.setText("    Score: \(gameManager.game.totalScore)")
-        
-        if gameManager.currentHoleIndex > 0 {
-            previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)")
-            previousHoleButton.setAlpha(1)
-        } else {
-            previousHoleButton.setAlpha(0)
-        }
-        if gameManager.currentHoleIndex < 17 {
-            nextHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex + 2)")
-            nextHoleButton.setAlpha(1)
-        } else {
-            nextHoleButton.setAlpha(0)
-        }
     }
     
     func updatePhone() {
@@ -138,7 +125,7 @@ class InterfaceController: WKInterfaceController {
         updateScreen()
         updatePhone()
     }
-    @IBAction func previousHoleButtonPressed() {
+    @IBAction func previousHoleSwipe() {
         let didWork = gameManager.previousHole()
         if didWork {
             updateScreen()
@@ -147,14 +134,13 @@ class InterfaceController: WKInterfaceController {
             print("No previous holes!")
         }
     }
-    @IBAction func nextHoleButtonPressed() {
+    @IBAction func nextHoleSwipe() {
         let didWork = gameManager.nextHole()
         if didWork{
             updateScreen()
             updatePhone()
         }
     }
-    
 }
 
 extension InterfaceController: WCSessionDelegate {

@@ -6,103 +6,103 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--main-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller spacing="1" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CountMyStrokes_WatchKit_App" customModuleProvider="target">
+                <controller identifier="main" spacing="1" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CountMyStrokes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text="    Score: 100" textAlignment="left" id="rwI-lX-mDc" userLabel="Round Score"/>
-                        <group width="1" alignment="left" id="CNS-kl-cL3" userLabel="Hole Info Group">
+                        <group width="1" height="0.20000000000000001" alignment="left" layout="vertical" spacing="0.0" id="LI9-xj-37z">
                             <items>
-                                <label width="0.5" alignment="left" text="Hole #18" textAlignment="left" id="axd-AF-0YK"/>
-                                <label width="0.5" alignment="left" text="Strokes: 10" textAlignment="right" minimumScaleFactor="0.69999999999999996" id="PJ2-Qb-CIn" userLabel="Hole Strokes Label"/>
+                                <label width="1" alignment="left" text="    Score: 100" textAlignment="left" id="rwI-lX-mDc" userLabel="Round Score"/>
+                                <group width="1" alignment="left" id="CNS-kl-cL3" userLabel="Hole Info Group">
+                                    <items>
+                                        <label width="0.5" alignment="left" text="Hole #18" textAlignment="left" id="axd-AF-0YK"/>
+                                        <label width="0.5" alignment="left" text="Strokes: 10" textAlignment="right" minimumScaleFactor="0.69999999999999996" id="PJ2-Qb-CIn" userLabel="Hole Strokes Label"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
-                        <group width="1" height="33" alignment="left" id="hVR-sH-hgt" userLabel="Strokes Group">
+                        <group width="1" height="0.69999999999999996" alignment="left" layout="vertical" spacing="2" id="eIf-p3-pAR" userLabel="Counters Group">
                             <items>
-                                <button width="40" height="1" alignment="left" title="-" id="4Di-V8-nJo">
-                                    <connections>
-                                        <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
-                                    </connections>
-                                </button>
-                                <label height="1" alignment="left" text="General: 10" minimumScaleFactor="0.5" id="Ray-DU-FJ7"/>
-                                <button width="40" height="1" alignment="right" title="+" id="wSx-Vm-qPg">
-                                    <connections>
-                                        <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>
-                                    </connections>
-                                </button>
+                                <group width="1" height="0.5" alignment="left" id="JI8-JT-cqy">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="General (10)" id="qHm-OL-Cz9">
+                                            <gestureRecognizers>
+                                                <longPressGestureRecognizer id="tqG-ti-gSU">
+                                                    <connections>
+                                                        <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="ZgZ-qI-ens"/>
+                                                    </connections>
+                                                </longPressGestureRecognizer>
+                                            </gestureRecognizers>
+                                            <connections>
+                                                <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="OvL-7H-xeh"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="Chips (10)" id="8z4-6x-GB5">
+                                            <gestureRecognizers>
+                                                <longPressGestureRecognizer id="t6v-xE-FWZ">
+                                                    <connections>
+                                                        <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="eZi-or-tif"/>
+                                                    </connections>
+                                                </longPressGestureRecognizer>
+                                            </gestureRecognizers>
+                                            <connections>
+                                                <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="0pG-JN-gpL"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="YVd-9R-MaT">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="Puts (10)" id="O9j-Mv-You">
+                                            <gestureRecognizers>
+                                                <longPressGestureRecognizer id="um2-4Q-i0K">
+                                                    <connections>
+                                                        <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="sOs-az-rxt"/>
+                                                    </connections>
+                                                </longPressGestureRecognizer>
+                                            </gestureRecognizers>
+                                            <connections>
+                                                <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="bKo-0v-9k8"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="Penalties (10)" id="heT-8d-ry1">
+                                            <gestureRecognizers>
+                                                <longPressGestureRecognizer id="MRB-De-gHh">
+                                                    <connections>
+                                                        <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="KWW-hn-m1a"/>
+                                                    </connections>
+                                                </longPressGestureRecognizer>
+                                            </gestureRecognizers>
+                                            <connections>
+                                                <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="9x9-OT-eWU"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
                             </items>
-                        </group>
-                        <group width="1" height="34" alignment="left" id="uyF-UU-kkI" userLabel="Chips Group">
-                            <items>
-                                <button width="40" height="1" alignment="left" title="-" id="jxb-Nu-6Jt">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer direction="2" id="dye-tt-RE9" userLabel="Next Hole Swipe">
                                     <connections>
-                                        <action selector="decrementChipsTaken" destination="AgC-eL-Hgc" id="yHg-3O-ij5"/>
+                                        <action selector="nextHoleSwipe" destination="AgC-eL-Hgc" id="q6Q-F3-rFY"/>
                                     </connections>
-                                </button>
-                                <label height="1" alignment="left" text="Chips: 10" minimumScaleFactor="0.69999999999999996" id="yM5-vr-ixj"/>
-                                <button width="40" height="1" alignment="right" title="+" id="dwZ-1M-Kgv">
+                                </swipeGestureRecognizer>
+                                <swipeGestureRecognizer id="Yfx-23-obd" userLabel="Previous Hole Swipe">
                                     <connections>
-                                        <action selector="incrementChipsTaken" destination="AgC-eL-Hgc" id="2Mj-lh-EX0"/>
+                                        <action selector="previousHoleSwipe" destination="AgC-eL-Hgc" id="YNb-47-5rh"/>
                                     </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="30" alignment="left" id="OnI-oC-LJ7" userLabel="Puts Group">
-                            <items>
-                                <button width="40" height="1" alignment="left" title="-" id="hBo-H5-ovd">
-                                    <connections>
-                                        <action selector="decrementPutsTaken" destination="AgC-eL-Hgc" id="xrX-C7-bk3"/>
-                                    </connections>
-                                </button>
-                                <label height="1" alignment="left" text="Puts: 10" minimumScaleFactor="0.80000000000000004" id="4hB-1D-seS"/>
-                                <button width="40" height="1" alignment="right" title="+" id="PE1-XV-l7P">
-                                    <connections>
-                                        <action selector="incrementPutsTaken" destination="AgC-eL-Hgc" id="cNy-IN-3Ov"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="33" alignment="left" id="d4a-PX-XFs" userLabel="Penalties Group">
-                            <items>
-                                <button width="40" height="1" alignment="left" title="-" id="SUw-1U-DZb">
-                                    <connections>
-                                        <action selector="decrementPenaltiesTaken" destination="AgC-eL-Hgc" id="gwn-ba-0Mp"/>
-                                    </connections>
-                                </button>
-                                <label height="1" alignment="left" text="Penalties: 10" minimumScaleFactor="0.5" id="tdf-9G-UmL"/>
-                                <button width="40" height="1" alignment="right" title="+" id="cfb-s7-Yy6">
-                                    <connections>
-                                        <action selector="incrementPenaltiesTaken" destination="AgC-eL-Hgc" id="hAJ-tf-Tfx"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
-                        <group width="1" height="33" alignment="left" id="Mla-cI-cKg">
-                            <items>
-                                <button width="0.5" height="1" alignment="left" title="Hole #1" id="t3S-yZ-500" userLabel="Previous Hole Button">
-                                    <connections>
-                                        <action selector="previousHoleButtonPressed" destination="AgC-eL-Hgc" id="FTY-5f-94X"/>
-                                    </connections>
-                                </button>
-                                <button width="0.51000000000000001" height="1" alignment="left" title="Hole #3" id="C1R-ii-3tu" userLabel="Next Hole Button">
-                                    <connections>
-                                        <action selector="nextHoleButtonPressed" destination="AgC-eL-Hgc" id="Q8h-Mb-WpR"/>
-                                    </connections>
-                                </button>
-                            </items>
+                                </swipeGestureRecognizer>
+                            </gestureRecognizers>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="chipsLabel" destination="yM5-vr-ixj" id="qxA-61-6fa"/>
+                        <outlet property="chipsCounterButton" destination="8z4-6x-GB5" id="yX9-pk-qfy"/>
+                        <outlet property="generalCounterButton" destination="qHm-OL-Cz9" id="qiP-0P-Wdr"/>
                         <outlet property="holeLabel" destination="axd-AF-0YK" id="Hwf-l4-uNs"/>
                         <outlet property="holeStrokesLabel" destination="PJ2-Qb-CIn" id="JhP-jN-pTN"/>
-                        <outlet property="nextHoleButton" destination="C1R-ii-3tu" id="yrj-5f-caE"/>
-                        <outlet property="penaltiesLabel" destination="tdf-9G-UmL" id="1d6-76-EGh"/>
-                        <outlet property="previousHoleButton" destination="t3S-yZ-500" id="jsg-8L-frh"/>
-                        <outlet property="putsLabel" destination="4hB-1D-seS" id="VZM-bA-fbc"/>
+                        <outlet property="penaltyCounterButton" destination="heT-8d-ry1" id="NAq-l1-DyU"/>
+                        <outlet property="putsCounterButton" destination="O9j-Mv-You" id="6Ry-GM-AN0"/>
                         <outlet property="roundScoreLabel" destination="rwI-lX-mDc" id="BND-Ds-Rnz"/>
-                        <outlet property="strokesLabel" destination="Ray-DU-FJ7" id="gpR-RV-uzO"/>
                     </connections>
                 </controller>
             </objects>
@@ -137,7 +137,7 @@
             <objects>
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="CountMyStrokes_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="373" y="952"/>
         </scene>
     </scenes>
 </document>
