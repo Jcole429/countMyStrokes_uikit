@@ -25,7 +25,7 @@
                                         <action selector="decrementStrokesTaken" destination="AgC-eL-Hgc" id="vuJ-Eg-nhj"/>
                                     </connections>
                                 </button>
-                                <label height="1" alignment="left" text="Strokes: 10" minimumScaleFactor="0.5" id="Ray-DU-FJ7"/>
+                                <label height="1" alignment="left" text="General: 10" minimumScaleFactor="0.5" id="Ray-DU-FJ7"/>
                                 <button width="40" height="1" alignment="right" title="+" id="wSx-Vm-qPg">
                                     <connections>
                                         <action selector="incrementStrokesTaken" destination="AgC-eL-Hgc" id="EVL-Df-73T"/>

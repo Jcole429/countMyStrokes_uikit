@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     func updateScreen() {
         holeNumLabel.text = "Hole #\(gameManager.getCurrentHole().holeNumber)"
         totalStrokesLabel.text = "Total Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)"
-        strokesLabel.text = "Strokes: \(gameManager.getCurrentHole().strokesTaken)"
+        strokesLabel.text = "General: \(gameManager.getCurrentHole().strokesTaken)"
         chipsLabel.text = "Chips: \(gameManager.getCurrentHole().chipsTaken)"
         putsLabel.text = "Puts: \(gameManager.getCurrentHole().putsTaken)"
         penaltiesLabel.text = "Penalties: \(gameManager.getCurrentHole().penaltiesTaken)"

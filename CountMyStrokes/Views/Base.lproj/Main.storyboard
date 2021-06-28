@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XXx-J9-LPa" userLabel="Dark Area">
-                                <rect key="frame" x="89" y="104" width="250" height="498"/>
+                                <rect key="frame" x="89" y="104" width="250" height="478"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hole #18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i71-tk-BMh" userLabel="holeLabel">
@@ -50,9 +50,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZKj-73-xJR" userLabel="Strokes Stack">
-                                <rect key="frame" x="89" y="394" width="250" height="32"/>
+                                <rect key="frame" x="89" y="374" width="250" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strokes: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-R7-Bwh" userLabel="strokesLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYq-R7-Bwh" userLabel="strokesLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-w1-0CV" userLabel="Chips Stack">
-                                <rect key="frame" x="89" y="446" width="250" height="32"/>
+                                <rect key="frame" x="89" y="426" width="250" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chips: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-gR-iiL" userLabel="chipsLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
@@ -90,7 +90,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-qT-nWI" userLabel="Puts Stack">
-                                <rect key="frame" x="89" y="498" width="250" height="32"/>
+                                <rect key="frame" x="89" y="478" width="250" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puts: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7e-jJ-rpf" userLabel="putsLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
@@ -110,7 +110,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-x8-0fB" userLabel="Penalties Stack">
-                                <rect key="frame" x="89" y="550" width="250" height="32"/>
+                                <rect key="frame" x="89" y="530" width="250" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penalties: 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqD-FC-7g0" userLabel="penaltiesLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="32"/>
@@ -162,7 +162,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owG-hv-3ak" userLabel="newGameButton">
-                                <rect key="frame" x="139" y="622" width="150" height="42"/>
+                                <rect key="frame" x="139" y="602" width="150" height="42"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="jqD-3I-7KH"/>
@@ -193,7 +193,7 @@
                             <constraint firstItem="CjG-hg-gxp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BuJ-vx-eDq"/>
                             <constraint firstItem="i71-tk-BMh" firstAttribute="top" secondItem="vnS-e6-Zoe" secondAttribute="bottom" constant="80" id="CTO-yz-9J1"/>
                             <constraint firstItem="RtC-x8-0fB" firstAttribute="bottom" secondItem="XXx-J9-LPa" secondAttribute="bottom" constant="-20" id="EDF-Gs-VLJ"/>
-                            <constraint firstItem="ZKj-73-xJR" firstAttribute="top" secondItem="x7C-bd-Ap5" secondAttribute="bottom" constant="40" id="HVh-Qv-tHz"/>
+                            <constraint firstItem="ZKj-73-xJR" firstAttribute="top" secondItem="x7C-bd-Ap5" secondAttribute="bottom" constant="20" id="HVh-Qv-tHz"/>
                             <constraint firstItem="IyD-x2-MUd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="KE6-HH-UWU"/>
                             <constraint firstItem="IyD-x2-MUd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LA8-Ox-mJk"/>
                             <constraint firstItem="XXx-J9-LPa" firstAttribute="top" secondItem="CjG-hg-gxp" secondAttribute="top" constant="-20" id="Lei-ym-FCE"/>

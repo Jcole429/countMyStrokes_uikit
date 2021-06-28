@@ -47,7 +47,7 @@ class InterfaceController: WKInterfaceController {
     
     func updateScreen() {
         print("Watch - updateScreen()")
-        strokesLabel.setText("Strokes: \(gameManager.getCurrentHole().strokesTaken)")
+        strokesLabel.setText("General: \(gameManager.getCurrentHole().strokesTaken)")
         chipsLabel.setText("Chips: \(gameManager.getCurrentHole().chipsTaken)")
         putsLabel.setText("Puts: \(gameManager.getCurrentHole().putsTaken)")
         penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
