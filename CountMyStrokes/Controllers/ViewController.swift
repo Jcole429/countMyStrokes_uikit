@@ -150,11 +150,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newGameButton(_ sender: UIButton) {
-        gameManager = GameManager()
-        gameManager.saveGameManager()
-        updateWatch()
-        updateScreen()
-        updateSteppers()
+        let newGameAlert = UIAlertController(title: "New Game?", message: "All data will be lost.", preferredStyle: .alert)
+        newGameAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+            self.gameManager = GameManager()
+            self.gameManager.saveGameManager()
+            self.updateWatch()
+            self.updateScreen()
+            self.updateSteppers()
+        }))
+        newGameAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(newGameAlert, animated: true, completion: nil)
     }
 }
 
