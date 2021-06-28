@@ -55,8 +55,18 @@ class InterfaceController: WKInterfaceController {
         holeStrokesLabel.setText("Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)")
         roundScoreLabel.setText("  Round Score: \(gameManager.game.totalScore)")
         
-        previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)")
-        nextHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex + 2)")
+        if gameManager.currentHoleIndex > 0 {
+            previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)")
+            previousHoleButton.setAlpha(1)
+        } else {
+            previousHoleButton.setAlpha(0)
+        }
+        if gameManager.currentHoleIndex < 17 {
+            nextHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex + 2)")
+            nextHoleButton.setAlpha(1)
+        } else {
+            nextHoleButton.setAlpha(0)
+        }
     }
     
     func updatePhone() {
