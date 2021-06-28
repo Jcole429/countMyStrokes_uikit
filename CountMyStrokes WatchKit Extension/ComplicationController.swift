@@ -1,6 +1,6 @@
 //
 //  ComplicationController.swift
-//  StrokeCounter WatchKit Extension
+//  CountMyStrokes WatchKit Extension
 //
 //  Created by Justin Cole on 6/12/21.
 //
@@ -14,7 +14,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "StrokeCounter", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "CountMyStrokes", supportedFamilies: CLKComplicationFamily.allCases)
             // Multiple complication support can be added here with more descriptors
         ]
         

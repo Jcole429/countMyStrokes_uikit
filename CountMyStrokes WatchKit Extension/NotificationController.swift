@@ -1,6 +1,6 @@
 //
 //  NotificationController.swift
-//  StrokeCounter WatchKit Extension
+//  CountMyStrokes WatchKit Extension
 //
 //  Created by Justin Cole on 6/12/21.
 //

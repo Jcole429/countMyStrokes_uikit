@@ -1,6 +1,6 @@
 //
 //  Hole.swift
-//  StrokeCounter
+//  CountMyStrokes
 //
 //  Created by Justin Cole on 6/13/21.
 //
