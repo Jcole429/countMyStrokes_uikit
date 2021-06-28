@@ -53,7 +53,7 @@ class InterfaceController: WKInterfaceController {
         penaltiesLabel.setText("Penalties: \(gameManager.getCurrentHole().penaltiesTaken)")
         holeLabel.setText("Hole #\(gameManager.currentHoleIndex + 1)")
         holeStrokesLabel.setText("Strokes: \(gameManager.getCurrentHole().totalStrokesTaken)")
-        roundScoreLabel.setText("  Round Score: \(gameManager.game.totalScore)")
+        roundScoreLabel.setText("    Score: \(gameManager.game.totalScore)")
         
         if gameManager.currentHoleIndex > 0 {
             previousHoleButton.setTitle("Hole #\(gameManager.currentHoleIndex)")

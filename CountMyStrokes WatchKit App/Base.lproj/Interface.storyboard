@@ -11,7 +11,7 @@
             <objects>
                 <controller spacing="1" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CountMyStrokes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text=" Round Score: 100" textAlignment="left" id="rwI-lX-mDc" userLabel="Round Score"/>
+                        <label width="1" alignment="left" text="    Score: 100" textAlignment="left" id="rwI-lX-mDc" userLabel="Round Score"/>
                         <group width="1" alignment="left" id="CNS-kl-cL3" userLabel="Hole Info Group">
                             <items>
                                 <label width="0.5" alignment="left" text="Hole #18" textAlignment="left" id="axd-AF-0YK"/>
