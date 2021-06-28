@@ -59,7 +59,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/StrokeCounter WatchKit App">
+         RemotePath = "/CountMyStrokes WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4AD6B912675949B00ABB0DF"
@@ -80,7 +80,7 @@
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/StrokeCounter WatchKit App">
+         RemotePath = "/CountMyStrokes WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4AD6B912675949B00ABB0DF"
